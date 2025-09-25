@@ -39,8 +39,8 @@ services:
       INVENIO_THEME_FRONTPAGE_TITLE: InvenioRDM Starter
       INVENIO_THEME_FRONTPAGE_SUBTITLE: A starter project for the turn-key research data management repository.
       INVENIO_THEME_SHOW_FRONTPAGE_INTRO_SECTION: "False"
-      INVENIO_SITE_UI_URL: https://localhost
-      INVENIO_SITE_API_URL: https://localhost/api
+      INVENIO_SITE_UI_URL: http://10.0.18.216:8880
+      INVENIO_SITE_API_URL: http://10.0.18.216:8880/api
       INVENIO_RDM_ALLOW_METADATA_ONLY_RECORDS: "True"
       INVENIO_RDM_ALLOW_RESTRICTED_RECORDS: "True"
       INVENIO_RDM_ALLOW_EXTERNAL_DOI_VERSIONING: "True"
