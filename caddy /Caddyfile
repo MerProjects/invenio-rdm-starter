@@ -1,0 +1,7 @@
+:80 {
+    handle_path /static/* {
+        root * /opt/invenio/var/instance/static
+        file_server
+    }
+    reverse_proxy web:5000
+}
