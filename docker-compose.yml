@@ -196,3 +196,15 @@ volumes:
   archived_data:
   caddy_data:
   caddy_config:
+
+  caddy:
+  image: caddy:2
+  ports:
+    - "8080:80"            # change if you want 80
+  volumes:
+    - caddy-data:/data
+    - caddy-config:/config
+    - ./caddy:/etc/caddy   # <-- directory-to-directory
+  depends_on:
+    - web
+
