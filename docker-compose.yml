@@ -168,8 +168,8 @@ services:
       - POSTGRES_USER=${POSTGRES_USER:-inveniordm}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-inveniordm}
       - POSTGRES_DB=${POSTGRES_DB:-inveniordm}
-    ports:
-      - 5432:5432
+   # ports:
+    #  - 5432:5432
   search:
     image: opensearchproject/opensearch:2.12.0
     restart: "unless-stopped"
